@@ -9,6 +9,6 @@ let vcard = 'BEGIN:VCARD\n'
 conn.sendMessage(m.chat, { contacts: { displayName: 'Wandy Gunawan', contacts: [{ vcard }] } }, { quoted: m })
 }
 
-handler.command = /^(owner|creator)$/i
+handler.command = /^owner/i 
 
 module.exports = handler
