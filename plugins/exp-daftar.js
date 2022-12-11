@@ -1,5 +1,5 @@
-const { createHash } from 'crypto'
-const fetch from 'node-fetch'
+const { createHash } = require('crypto')
+const fetch = require('node-fetch')
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 
 let handler = async function (m, { text, usedPrefix, command }) {
