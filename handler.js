@@ -498,7 +498,7 @@ module.exports = {
                         continue
                     }
                     if (plugin.register == true && _user.registered == false) { // Need register?
-                        m.reply(unreg)
+                        m.reply('Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*')
                         continue
                     }
                     m.isCommand = true
