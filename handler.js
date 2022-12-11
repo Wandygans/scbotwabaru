@@ -498,7 +498,7 @@ module.exports = {
                         continue
                     }
                     if (plugin.register == true && _user.registered == false) { // Need register?
-                        m.reply(msg.unreg)
+                        m.reply(unreg)
                         continue
                     }
                     m.isCommand = true
