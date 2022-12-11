@@ -9,7 +9,7 @@ Saya Adalah Zero-Bot Salah Satu Bot Whatsapp Yang Siap Membantu Kamu Mempermudah
     		key: m.key
     	}
     })*/
-conn.send3ButtonLoc(m.chat, await conn.resize(pickRandom(global.waifu), 300, 300), ori, `By Wandygans`, 'COMMAND', '.simplemenu', 'PING', '.ping', 'OWNER', '.owner', m)
+conn.send3ButtonLoc(m.chat, await conn.resize(pickRandom(global.waifu), 300, 300), ori, `By Wandygans`, 'COMMAND', '.allmenu', 'PING', '.ping', 'OWNER', '.owner', m)
 }
 
 handler.command = ['menu', 'help']
