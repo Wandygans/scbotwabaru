@@ -93,11 +93,11 @@ menu = `*Halo, @${m.sender.split`@`[0]} 👋*
 ✧ *${wibfont}*
 _${wibh}:${wibm}:${wibs}_
 
-✧ *${witfont}*
-_${witj}:${witm}:${wits}_
-
 ✧ *${witafont}*
 _${witaj}:${witam}:${witas}_
+
+✧ *${witfont}*
+_${witj}:${witm}:${wits}_
 
 ●────━───༺༻───━────●
 *《 TANGGAL 》*
@@ -119,11 +119,21 @@ Islamic date:
 ❏ *Owner*: WandyGans
 
 ●────━───༺༻───━────●
-*《 TOOLS MENu 》*
-❏ ${usedPrefix + command}sticker
+*《 TOOLS MENU 》*
+❏ ${usedPrefix}sticker
 
 *《 PRIMBON MENU 》*
-❏ ${usedPrefix + command}sticker
+❏ ${usedPrefix}zodiak
+
+*《 MAIN MENU 》*
+❏ ${usedPrefix}register
+
+*《 OWNER MENU 》*
+❏ >
+❏ $
+
+
+
 
 
 `
