@@ -91,13 +91,13 @@ menu = `*Halo, @${m.sender.split`@`[0]} 👋*
 *《 INFO JAM 》*
 
 ✧ *${wibfont}*
-_${wibh} Jam ${wibm} Menit ${wibs} Detik_
+_${wibh}:${wibm}:${wibs}_
 
 ✧ *${witfont}*
-_${witj} Jam ${witm} Menit ${wits} Detik_
+_${witj}:${witm}:${wits}_
 
 ✧ *${witafont}*
-_${witaj} Jam ${witam} Menit ${witas} Detik_
+_${witaj}:${witam}:${witas}_
 
 ●────━───༺༻───━────●
 *《 TANGGAL 》*
@@ -119,7 +119,13 @@ Islamic date:
 ❏ *Owner*: WandyGans
 
 ●────━───༺༻───━────●
-*《 LIST MENU 》*
+*《 TOOLS MENu 》*
+❏ ${usedPrefix + command}sticker
+
+*《 PRIMBON MENU 》*
+❏ ${usedPrefix + command}sticker
+
+
 `
 let buttons = [
 {buttonId: `.ping`, buttonText: {displayText: 'PING'}, type: 1}
