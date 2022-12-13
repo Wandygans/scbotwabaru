@@ -42,7 +42,7 @@ async function tiktok(query) {
    })
 }
 
-let handler = async function (m, { text, usedPrefix }) {
+let handler = async function (m, { text, usedPrefix, conn}) {
 if(!text) throw `mana link nya blok`
 m.reply(wait)
 url = await tiktok(text)
