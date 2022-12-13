@@ -1,10 +1,8 @@
-const { downloadContentFromMessage } = (await import('@adiwajshing/baileys')).default
+const { downloadContentFromMessage } = require('@adiwajshing/baileys').default
 let handler = m => m
 
 handler.before = async function (m) {
     let chat = db.data.chats[m.chat]
-    if (/^[.~#/\$,](read)?viewonce/.test(m.text)) return
-    if (!chat.viewonce || chat.isBanned) return
     if (m.mtype == 'viewOnceMessage') {
         let msg = m.message.viewOnceMessage.message
         let type = Object.keys(msg)[0]
@@ -21,4 +19,4 @@ handler.before = async function (m) {
     }
 }
 
-export default handler
+module.exports = handler
