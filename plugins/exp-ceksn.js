@@ -1,4 +1,4 @@
-import { createHash } from 'crypto'
+const { createHash } = require('crypto')
 
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix }) {
@@ -7,8 +7,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 m.reply(`*📮 SN:* ${sn}`)
 }
 
-handler.help = ['ceksn']
-handler.tags = ['xp']
 handler.command = /^(ceksn)$/i
 handler.register = true
-export default handler
+
+module.exports = handler
