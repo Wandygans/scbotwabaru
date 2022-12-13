@@ -127,15 +127,14 @@ Islamic date:
 
 *《 MAIN MENU 》*
 ❏ ${usedPrefix}register
+❏ ${usedPrefix}unreg
+❏ ${usedPrefix}ceksn
+❏ ${usedPrefix}owner
+❏ ${usedPrefix}ping
 
 *《 OWNER MENU 》*
 ❏ >
 ❏ $
-
-
-
-
-
 `
 let buttons = [
 {buttonId: `.ping`, buttonText: {displayText: 'PING'}, type: 1}
