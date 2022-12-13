@@ -43,7 +43,8 @@ async function tiktok(query) {
 }
 
 let handler = async(m,{text, conn}) => {
-m.reply(global.wait)
+if(!text) throw `mana link nya blok`
+m.reply(wait)
 url = await tiktok(text)
 conn.sendFile(m.chat, url.medias.nowm.url, null, ``, global.ftroli)
 }
