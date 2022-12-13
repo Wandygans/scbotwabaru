@@ -125,6 +125,9 @@ Islamic date:
 *《 PRIMBON MENU 》*
 ❏ ${usedPrefix}zodiak
 
+*《 DOWNLOADER MENU 》*
+❏ ${usedPrefix}tiktok
+
 *《 MAIN MENU 》*
 ❏ ${usedPrefix}register
 ❏ ${usedPrefix}unreg
