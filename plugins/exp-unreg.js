@@ -1,4 +1,5 @@
-import { createHash } from 'crypto'
+const { createHash } = require('crypto')
+
 let handler = async function (m, { args }) {
   if (!args[0]) throw 'Serial Number kosong'
   let user = global.db.data.users[m.sender]
@@ -7,10 +8,8 @@ let handler = async function (m, { args }) {
   user.registered = false
   m.reply('```Succes Unreg !```')
 }
-handler.help = ['', 'ister'].map(v => 'unreg' + v + ' <SN|SERIAL NUMBER>')
-handler.tags = ['xp']
 
 handler.command = /^unreg(ister)?$/i
 handler.register = true
 
-export default handler
+module.exports = handler
