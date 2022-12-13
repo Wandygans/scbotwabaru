@@ -696,8 +696,6 @@ module.exports = {
     },
     async delete({ fromMe, id, participant }) {
         if (fromMe) return
-        let chats = Object.entries(conn.chats).find(([user, data]) => data.messages && data.messages[id])
-        if (!chats) return
         let msg = JSON.parse(chats[1].messages[id])
         let chat = global.db.data.chats[msg.chat] || {}
         if (chat.delete) return
