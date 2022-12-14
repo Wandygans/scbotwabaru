@@ -49,7 +49,7 @@ url = await tiktok(text)
 conn.sendFile(m.chat, url.medias.nowm.url, null, ``, global.ftroli)
 }
 
-handler.command = ['tiktok']
+handler.command = /^(tiktok)$/i
 handler.exp = 3
 
 module.exports = handler
