@@ -41,14 +41,9 @@ async function tiktok(query) {
 }
 
 let handler = async(m, {conn, command, usedPrefix, text}) => {
-try {
-if(!text) throw `mana link nya blok`
-m.reply(wait)
-url = await tiktok(text)
-conn.sendFile(m.chat, url.medias.nowm.url, null, ``, m)
-} catch (e){
-console.log(e)
-}
+tiktok = await tiktok('https://vt.tiktok.com/ZS8FB7BLF/')
+console.log(tiktok)
+return tiktok
 }
 
 handler.command = /^(tiktok)$/i
