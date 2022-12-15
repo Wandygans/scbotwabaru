@@ -6,8 +6,6 @@ const clean = (data) => {
 	return data.replace(regex, '')
 }
 
-global.ftroli = { key: { remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { itemCount: 9999999999999999999999999999999999999999999999999999999, status: 1, surface: 1, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' } } }
-
 async function tiktok(query) {
    return new Promise((resolve, reject) => {
      axios("https://lovetik.com/api/ajax/search", {
@@ -46,7 +44,7 @@ let handler = async(m, {conn, command, usedPrefix, text}) => {
 if(!text) throw `mana link nya blok`
 m.reply(wait)
 url = await tiktok(text)
-conn.sendFile(m.chat, url.medias.nowm.url, null, ``, global.ftroli)
+conn.sendFile(m.chat, url.medias.nowm.url, null, ``, m)
 }
 
 handler.command = /^(tiktok)$/i
