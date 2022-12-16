@@ -6,7 +6,7 @@ const clean = (data) => {
 	return data.replace(regex, '')
 }
 
-async function tiktok(query) {
+async function tiktok(query){
    return new Promise((resolve, reject) => {
      axios("https://lovetik.com/api/ajax/search", {
        method: "POST",
@@ -40,13 +40,12 @@ async function tiktok(query) {
    })
 }
 
-let handler = async(m, {conn, command, usedPrefix, text}) => {
+let handler = async (m, { conn, args, command, q, usedPrefix }) => {
 tiktok = await tiktok('https://vt.tiktok.com/ZS8FB7BLF/')
 console.log(tiktok)
 return tiktok
 }
 
-handler.command = /^(tiktok)$/i
-handler.exp = 3
+handler.command = ['tiktok']
 
 module.exports = handler
