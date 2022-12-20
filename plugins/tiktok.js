@@ -41,9 +41,14 @@ async function tiktok(query){
 }
 
 let handler = async (m, { conn, args, command, q, usedPrefix }) => {
-tiktok = await tiktok('https://vt.tiktok.com/ZS8FB7BLF/')
-console.log(tiktok)
-return tiktok
+if (!text) throw `Example: ${usedPrefix + command) url`
+m.reply(wait)
+try {
+tiktok = await tiktok(text)
+conn.sendMessage(m.chat, { video: { url: tiktok.medias.nowm.url }, mimetype: 'video/mp4', fileName: `${tiktok.desc}.mp4`, caption: `` }, { quoted: m })
+) catch (e) {
+throw e
+}
 }
 
 handler.command = ['tiktok']
