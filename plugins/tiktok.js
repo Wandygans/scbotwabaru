@@ -46,7 +46,7 @@ m.reply(wait)
 try {
 tiktok = await tiktok(text)
 conn.sendMessage(m.chat, { video: { url: tiktok.medias.nowm.url }, mimetype: 'video/mp4', fileName: `${tiktok.desc}.mp4`, caption: `` }, { quoted: m })
-) catch (e) {
+} catch (e) {
 m.reply(e)
 }
 }
