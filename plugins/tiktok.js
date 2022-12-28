@@ -41,7 +41,7 @@ async function tiktok(query){
 }
 
 let handler = async (m, { conn, args, command, q, usedPrefix }) => {
-if (!text) m.reply(`Example: ${usedPrefix + command) url`)
+if (!text) m.reply(`Example: ${usedPrefix + command} url`)
 m.reply(wait)
 try {
 tiktok = await tiktok(text)
